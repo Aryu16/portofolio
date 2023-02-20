@@ -39,7 +39,7 @@
         margin: 0 auto;
         row-gap: 15px;
         align-items: center;
-        justify-content: space-between;
+        padding: 0;
     }
 
     h4 {

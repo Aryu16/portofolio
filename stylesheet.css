@@ -2,6 +2,11 @@
   margin: 0;
 }
 
+h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
 body{
   color: #404146;
 }
@@ -166,6 +171,67 @@ span {
   footer ul li {
     font-size: 15px;
 
+  }
+
+  slider-container {
+    text-align: center;
+    background-color: #eee;
+  }
+  
+  .slider-item {
+    display: none; /* Tersembunyi secara default */
+  }
+  
+  img {
+    width: 30%;
+    height: 300px;
+    object-fit: contain;
+  }
+  
+  .prev,
+  .next {
+    position: relative;
+    top: -160px;
+    left: 0px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .prev {
+    left: -200px;
+  }
+
+  .next {
+    left: 200px;
+  }
+  
+  /* Animasi */
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade {
+    from {
+      opacity: 0.4;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   

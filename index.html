@@ -1,100 +1,110 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <link rel="stylesheet" href="https//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="responsive.css">
-  </head>
-  <body>
-    <header>
-      <nav>
-        <h1>Ninja Ken</h1>
-        <ul>
-          <li>Tentang Saya</li>
-          <li>Proyek Contoh</li>
-          <li>Hubungi Saya</li>
-        </ul>
-      </nav>
-      </header>
 
-      <section class="jumbotron">
-        
-        <div class="greeting">
-        <h2>NINJA KEN<span>.</span></h2>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portofolio</title>
+  <link rel="stylesheet" href="https//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>Ninja Ken</h1>
+      <ul>
+        <li>Tentang Saya</li>
+        <li>Proyek Contoh</li>
+        <li>Hubungi Saya</li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="jumbotron">
+
+    <div class="greeting">
+      <h2>NINJA KEN<span>.</span></h2>
+    </div>
+
+    <div class="ilustration">
+      <h3>MY PORTFOLIO</h3>
+      <img src="IMAGE/ninjaken.png" />
+    </div>
+  </section>
+
+  <main>
+    <section class="about">
+      <h4>Tentang Saya</h4>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+
+    </section>
+
+  </main>
+
+  <section class="project">
+
+    <h4>Proyek Contoh</h4>
+
+    <div class="slider-container">
+
+      <div class="card slider-item fade">
+        <img src="IMAGE/1.png" />
+        <p>Image 1</p>
       </div>
 
-      <div class="ilustration">
-          <h3>MY PORTFOLIO</h3>
-          <img src="IMAGE/ninjaken.png"/>
+      <div class="card slider-item fade">
+        <img src="IMAGE/2.png" />
+        <p>Image 2</p>
       </div>
-      </section>
 
-      <main>
-        <section class="about">
-          <h4>Tentang Saya</h4>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-
-        </section>
-
-      </main>
-
-      <section class="project">
-
-        <h4>Proyek Contoh</h4>
-
-        <div class="list">
-        
-        <div class="card">
-          <img src="IMAGE/1.png"/>
-          <p>Image 1</p>
-        </div>
-
-        <div class="card">
-          <img src="IMAGE/2.png"/>
-          <p>Image 2</p>
-        </div>
-
-        <div class="card">
-          <img src="IMAGE/3.png"/>
-          <p>Image 3</p>
-        </div>
+      <div class="card slider-item fade">
+        <img src="IMAGE/3.png" />
+        <p>Image 3</p>
       </div>
-      </section>
+      <a class="prev" onclick="updateSlide(-1)">&#10094;</a>
+      <a class="next" onclick="updateSlide(1)">&#10095;</a>
+    </div>
 
-      <section class="contact">
+  </section>
 
-        <h4>Hubungi Saya</h4>
+  <section class="contact">
 
-        <form>
-        <input type="text" placeholder="Email (Diperlukan)">
-        <textarea placeholder="Message (Diperlukan)"></textarea>
+    <h4>Hubungi Saya</h4>
 
-        <button type="submit">Kirim</button>
-      </form>
+    <form>
+      <input type="text" placeholder="Email (Diperlukan)">
+      <textarea placeholder="Message (Diperlukan)"></textarea>
 
-      </section>
+      <button type="submit">Kirim</button>
+    </form>
 
-      <footer>
+  </section>
 
-        <h5>
-          NINJA KEN
-        </h5>
+  <footer>
 
-        <ul>
-          <li>Tentang Saya</li>
+    <h5>
+      NINJA KEN
+    </h5>
 
-          <li>Proyek Contoh</li>
+    <ul>
+      <li>Tentang Saya</li>
 
-          <li>Hubungi Saya</li>
-        </ul>
+      <li>Proyek Contoh</li>
 
-      </footer>
+      <li>Hubungi Saya</li>
+    </ul>
 
-      
-      </body>
-      </html>
+  </footer>
+<script src="main.js"></script>
+
+</body>
+
+</html>
